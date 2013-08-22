@@ -14,7 +14,14 @@ class Database
     @contacts.select {|contact| contact.id == contact_id.to_i}
   end
 
+  def self.display_all
+    p @contacts
   end
+
+  def self.delete_contact
+   
+  end
+  
 
 end
 

@@ -51,11 +51,18 @@ class CRM
     print "Update your email: "
     email = gets.chomp
 
-    p contact
 
     main_menu
   end
 
+  def delete_contact
+  puts "input id of contact you want to delete"
+  id_to_delete = gets.chomp  
+  end
+  
+  def display_all_contact
+    Database.display_all
+  end
 end
 
 crm_app = CRM.new
